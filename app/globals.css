@@ -10,6 +10,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ===== VARIÁVEIS CSS PARA TEMAS ===== */
@@ -108,6 +111,23 @@ body {
   --color-code-border: #495057;
 }
 
+/* ===== ESTILOS BÁSICOS COMPARTILHADOS ===== */
+.theme-toggle {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.theme-toggle:hover {
+  background-color: var(--color-primary-hover);
+}
+
 /* ===== ESTILOS GLOBAIS ===== */
 .container {
   max-width: 1200px;
@@ -136,11 +156,6 @@ body {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--color-border);
-}
-
-.theme-toggle {
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
 }
 
 /* ===== TIPOGRAFIA ===== */
