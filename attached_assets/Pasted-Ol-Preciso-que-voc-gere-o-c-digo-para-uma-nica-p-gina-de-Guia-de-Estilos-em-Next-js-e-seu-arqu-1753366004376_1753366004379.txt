@@ -1,0 +1,79 @@
+Olá! Preciso que você gere o código para uma única página de "Guia de Estilos" em Next.js e seu arquivo CSS correspondente. Esta página deve ser abrangente e servir como a fundação visual para toda a minha aplicação.
+
+Requisitos Obrigatórios:
+
+Estilização com CSS Modules: A estilização deve ser feita exclusivamente com CSS Modules. Crie um arquivo chamado StyleGuide.module.css para conter todo o CSS. O componente da página deve importar e usar as classes deste arquivo. Nenhum estilo inline ou outra biblioteca de CSS-in-JS deve ser usada.
+
+Tema Claro e Escuro com Variáveis CSS: A funcionalidade de troca de tema (claro/escuro) deve ser implementada usando Variáveis CSS (Custom Properties) e um data-attribute.
+
+No arquivo .css, defina um conjunto completo de variáveis de cor (para fundo, texto, superfícies, bordas, cores de estado, etc.) para o tema claro como padrão.
+
+Use um seletor de atributo (ex: [data-theme='dark']) para sobrescrever essas variáveis com as cores do tema escuro.
+
+Todas as classes de estilo devem usar var(--nome-da-variavel) para se referenciar às cores.
+
+Controle de Tema em React: No componente da página (page.tsx), use o hook useState para controlar o tema atual ('light' ou 'dark'). Adicione um botão que permita ao usuário alternar entre os temas. O valor do estado do tema deve ser aplicado a um atributo data-theme no elemento principal da página.
+
+Conteúdo da Página (Elementos a serem estilizados no StyleGuide.module.css):
+
+Por favor, organize a página em seções claras e estilize os seguintes elementos, garantindo que todos respondam perfeitamente à troca de tema:
+
+Seção 1: Fundamentos (Cores e Layout)
+
+Paleta de Cores: Exiba visualmente as cores principais do tema (primária, secundária, acento) e as cores de estado (sucesso, erro, aviso, informação).
+
+Estrutura: Crie uma classe de container principal (.container) para definir o padding e a largura máxima da página, e uma classe de seção (.section) para agrupar elementos.
+
+Seção 2: Tipografia
+
+Títulos: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>.
+
+Texto: <p> (parágrafo), <blockquote> (bloco de citação).
+
+Links: <a>, com estilos para os estados padrão, :hover e :focus.
+
+Código: <code> para código inline e <pre><code> para blocos de código, com um fundo sutil e fonte monoespaçada.
+
+Seção 3: Botões (Variações e Estados)
+
+Botão Primário (.buttonPrimary): A principal chamada para ação.
+
+Botão Secundário (.buttonSecondary): Ação com menor ênfase (ex: com borda).
+
+Botão de Texto/Fantasma (.buttonGhost): Apenas texto, sem fundo ou borda.
+
+Botão Destrutivo (.buttonDestructive): Para ações perigosas (ex: excluir), usando a cor de erro.
+
+Estados: Para cada variação, mostre os estados padrão, :hover, :active, e [disabled].
+
+Seção 4: Elementos de Formulário
+
+Rótulos (<label>): Estilize os rótulos dos campos.
+
+Campos de Texto (.input): Para <input type="text">, email, password, e <textarea>.
+
+Seleção (.select): Para o elemento <select>.
+
+Caixas de Seleção e Rádio (.checkbox, .radio): Estilize os elementos <input type="checkbox"> e <input type="radio">, incluindo seus marcadores visuais.
+
+Estados: Para cada elemento, estilize os estados padrão, :focus, [disabled], e um estado de erro (que pode ser ativado por uma classe no elemento pai ou um atributo como [aria-invalid="true"]).
+
+Seção 5: Componentes de UI Comuns
+
+Card (.card): Um contêiner com borda, sombra sutil (box-shadow), e cantos arredondados para agrupar conteúdo.
+
+Avatar (.avatar): Um círculo para exibir uma imagem de perfil ou iniciais. Inclua tamanhos diferentes (pequeno, médio, grande).
+
+Badge / Tag (.badge): Um pequeno elemento inline com cantos arredondados para exibir status ou categorias. Inclua variações de cor (primária, sucesso, erro).
+
+Alertas (.alert): Blocos de mensagem para feedback ao usuário. Crie variações: .alertSuccess, .alertError, .alertWarning, .alertInfo.
+
+Tabela (.table): Estilize <table>, <thead>, <tbody>, <th>, <td>. Adicione uma borda sutil às linhas e um efeito :hover nas linhas (<tr>).
+
+Seção 6: Navegação
+
+Menu Principal (.navbar): Crie uma barra de navegação horizontal simples usando <nav> e uma lista <ul>.
+
+Itens de Menu (.navLink): Estilize os links dentro da navegação. Mostre um estilo distinto para o link ativo (que pode ser simulado com uma classe .active).
+
+O código final deve ser limpo, bem comentado e organizado em dois arquivos: app/style-guide/page.tsx e app/style-guide/StyleGuide.module.css. O objetivo é que este guia de estilos seja uma base robusta e reutilizável para construir qualquer aplicação.
