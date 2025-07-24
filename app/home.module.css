@@ -110,12 +110,12 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
   color: white;
   border: none;
-  box-shadow: 0 4px 15px rgba(0, 112, 243, 0.3);
+  box-shadow: var(--color-shadow-card);
 }
 
 .buttonPrimary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 112, 243, 0.4);
+  box-shadow: var(--color-shadow-card-hover);
 }
 
 .buttonSecondary {
@@ -140,7 +140,7 @@
 .themeControls {
   position: absolute;
   top: var(--spacing-xl);
-  right: var(--spacing-xl);
+  right: var(--spacing-3xl);
   z-index: 10;
 }
 
