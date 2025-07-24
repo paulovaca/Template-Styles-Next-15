@@ -1,4 +1,3 @@
-
 'use client'
 
 import { useState } from 'react'
@@ -23,39 +22,51 @@ export default function StyleGuide() {
         </button>
       </header>
 
-      {/* Seção 1: Fundamentos (Cores e Layout) */}
+      {/* Seção 1: Paleta de Cores */}
       <section className="section">
-        <h2>Fundamentos</h2>
-        
-        <h3>Paleta de Cores</h3>
+        <h2>Paleta de Cores</h2>
         <div className="color-palette">
-          <div className="color-card">
-            <div className="color-swatch primary-color"></div>
-            <span>Primária</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-primary)'}}></div>
+            <div className="color-info">
+              <h4>Primária</h4>
+              <p>Cor principal da aplicação</p>
+            </div>
           </div>
-          <div className="color-card">
-            <div className="color-swatch secondary-color"></div>
-            <span>Secundária</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-secondary)'}}></div>
+            <div className="color-info">
+              <h4>Secundária</h4>
+              <p>Cor de apoio</p>
+            </div>
           </div>
-          <div className="color-card">
-            <div className="color-swatch accent-color"></div>
-            <span>Acento</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-accent)'}}></div>
+            <div className="color-info">
+              <h4>Destaque</h4>
+              <p>Cor de acento</p>
+            </div>
           </div>
-          <div className="color-card">
-            <div className="color-swatch success-color"></div>
-            <span>Sucesso</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-success)'}}></div>
+            <div className="color-info">
+              <h4>Sucesso</h4>
+              <p>Para mensagens positivas</p>
+            </div>
           </div>
-          <div className="color-card">
-            <div className="color-swatch error-color"></div>
-            <span>Erro</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-error)'}}></div>
+            <div className="color-info">
+              <h4>Erro</h4>
+              <p>Para mensagens de erro</p>
+            </div>
           </div>
-          <div className="color-card">
-            <div className="color-swatch warning-color"></div>
-            <span>Aviso</span>
-          </div>
-          <div className="color-card">
-            <div className="color-swatch info-color"></div>
-            <span>Informação</span>
+          <div className="color-item">
+            <div className="color-sample" style={{backgroundColor: 'var(--color-warning)'}}></div>
+            <div className="color-info">
+              <h4>Aviso</h4>
+              <p>Para alertas importantes</p>
+            </div>
           </div>
         </div>
       </section>
@@ -63,257 +74,150 @@ export default function StyleGuide() {
       {/* Seção 2: Tipografia */}
       <section className="section">
         <h2>Tipografia</h2>
-        
-        <div className="typography-demo">
-          <h1>Título H1 - Heading Principal</h1>
-          <h2>Título H2 - Seção Principal</h2>
-          <h3>Título H3 - Subseção</h3>
-          <h4>Título H4 - Subtítulo</h4>
-          <h5>Título H5 - Texto Menor</h5>
-          <h6>Título H6 - Texto Pequeno</h6>
-          
-          <p>Este é um parágrafo regular que demonstra como o texto comum aparece na aplicação. Ele deve ser legível e confortável para leitura em ambos os temas.</p>
-          
-          <blockquote>
-            Esta é uma citação em bloco que se destaca do texto principal. Ela é usada para destacar informações importantes ou citações de outras fontes.
-          </blockquote>
-          
-          <p>Aqui temos um <a href="#" className="link">link padrão</a> que demonstra os diferentes estados de interação.</p>
-          
-          <p>Código inline: <code>const exemplo = 'Hello World'</code></p>
-          
-          <pre><code>{`// Bloco de código
-function exemploFuncao() {
-  console.log('Este é um exemplo de bloco de código');
-  return true;
+        <h1>Título 1 (H1)</h1>
+        <h2>Título 2 (H2)</h2>
+        <h3>Título 3 (H3)</h3>
+        <h4>Título 4 (H4)</h4>
+        <h5>Título 5 (H5)</h5>
+        <h6>Título 6 (H6)</h6>
+
+        <p>Este é um parágrafo de exemplo que demonstra como o texto comum aparece na aplicação. Ele deve ser legível e ter um bom contraste com o fundo.</p>
+
+        <blockquote>
+          Esta é uma citação de exemplo que se destaca do texto comum através de estilização diferenciada.
+        </blockquote>
+
+        <p>
+          Este é um link <a href="#">que leva a outro lugar</a> e demonstra o estilo dos links na aplicação.
+        </p>
+
+        <p>
+          Código inline: <code>const exemplo = "Hello World"</code>
+        </p>
+
+        <pre><code>{`function exemplo() {
+  return "Hello World";
 }`}</code></pre>
-        </div>
       </section>
 
       {/* Seção 3: Botões */}
       <section className="section">
         <h2>Botões</h2>
-        
-        <div className="button-group">
-          <h3>Botão Primário</h3>
-          <div className="button-variations">
-            <button className="button-primary">Normal</button>
-            <button className="button-primary" disabled>Desabilitado</button>
-          </div>
-          
-          <h3>Botão Secundário</h3>
-          <div className="button-variations">
-            <button className="button-secondary">Normal</button>
-            <button className="button-secondary" disabled>Desabilitado</button>
-          </div>
-          
-          <h3>Botão Fantasma</h3>
-          <div className="button-variations">
-            <button className="button-ghost">Normal</button>
-            <button className="button-ghost" disabled>Desabilitado</button>
-          </div>
-          
-          <h3>Botão Destrutivo</h3>
-          <div className="button-variations">
-            <button className="button-destructive">Excluir</button>
-            <button className="button-destructive" disabled>Desabilitado</button>
-          </div>
+
+        <h3>Variações</h3>
+        <div style={{marginBottom: '2rem'}}>
+          <button className="button-primary">Botão Primário</button>
+          <button className="button-secondary">Botão Secundário</button>
+          <button className="button-ghost">Botão Fantasma</button>
+          <button className="button-destructive">Botão Destrutivo</button>
+        </div>
+
+        <h3>Estados Desabilitados</h3>
+        <div>
+          <button className="button-primary" disabled>Primário Desabilitado</button>
+          <button className="button-secondary" disabled>Secundário Desabilitado</button>
+          <button className="button-ghost" disabled>Fantasma Desabilitado</button>
+          <button className="button-destructive" disabled>Destrutivo Desabilitado</button>
         </div>
       </section>
 
-      {/* Seção 4: Elementos de Formulário */}
+      {/* Seção 4: Formulários */}
       <section className="section">
         <h2>Elementos de Formulário</h2>
-        
-        <div className="form-demo">
-          <div className="field-group">
-            <label htmlFor="text-input">Rótulo do Campo</label>
-            <input 
-              type="text" 
-              id="text-input"
-              className="input"
-              placeholder="Digite aqui..."
-            />
+
+        <div style={{maxWidth: '400px'}}>
+          <label htmlFor="text-input">Campo de Texto</label>
+          <input 
+            type="text" 
+            id="text-input"
+            className="input"
+            placeholder="Digite algo..."
+          />
+
+          <label htmlFor="email-input">Email</label>
+          <input 
+            type="email" 
+            id="email-input"
+            className="input"
+            placeholder="seu@email.com"
+          />
+
+          <label htmlFor="password-input">Senha</label>
+          <input 
+            type="password" 
+            id="password-input"
+            className="input"
+            placeholder="Sua senha"
+          />
+
+          <label htmlFor="textarea">Área de Texto</label>
+          <textarea 
+            id="textarea"
+            rows={4}
+            placeholder="Digite uma mensagem mais longa..."
+          ></textarea>
+
+          <label htmlFor="select">Seleção</label>
+          <select id="select" className="select">
+            <option>Escolha uma opção</option>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+            <option>Opção 3</option>
+          </select>
+
+          <div className="checkbox-group">
+            <input type="checkbox" id="checkbox" className="checkbox" />
+            <label htmlFor="checkbox">Checkbox</label>
           </div>
-          
-          <div className="field-group">
-            <label htmlFor="email-input">Email</label>
-            <input 
-              type="email" 
-              id="email-input"
-              className="input"
-              placeholder="seu@email.com"
-            />
+
+          <div className="radio-group">
+            <input type="radio" id="radio1" name="radio" className="radio" />
+            <label htmlFor="radio1">Opção 1</label>
           </div>
-          
-          <div className="field-group">
-            <label htmlFor="password-input">Senha</label>
-            <input 
-              type="password" 
-              id="password-input"
-              className="input"
-              placeholder="••••••••"
-            />
+
+          <div className="radio-group">
+            <input type="radio" id="radio2" name="radio" className="radio" />
+            <label htmlFor="radio2">Opção 2</label>
           </div>
-          
-          <div className="field-group">
-            <label htmlFor="textarea">Área de Texto</label>
-            <textarea 
-              id="textarea"
-              className="input"
-              rows={4}
-              placeholder="Digite sua mensagem..."
-            ></textarea>
-          </div>
-          
-          <div className="field-group">
-            <label htmlFor="select">Seleção</label>
-            <select id="select" className="select">
-              <option>Selecione uma opção</option>
-              <option>Opção 1</option>
-              <option>Opção 2</option>
-              <option>Opção 3</option>
-            </select>
-          </div>
-          
-          <div className="field-group">
-            <div className="checkbox-group">
-              <input type="checkbox" id="checkbox1" className="checkbox" />
-              <label htmlFor="checkbox1">Opção de checkbox 1</label>
-            </div>
-            <div className="checkbox-group">
-              <input type="checkbox" id="checkbox2" className="checkbox" />
-              <label htmlFor="checkbox2">Opção de checkbox 2</label>
-            </div>
-          </div>
-          
-          <div className="field-group">
-            <div className="radio-group">
-              <input type="radio" id="radio1" name="radio-example" className="radio" />
-              <label htmlFor="radio1">Opção de rádio 1</label>
-            </div>
-            <div className="radio-group">
-              <input type="radio" id="radio2" name="radio-example" className="radio" />
-              <label htmlFor="radio2">Opção de rádio 2</label>
-            </div>
-          </div>
-          
-          <div className="field-group">
-            <label htmlFor="error-input">Campo com Erro</label>
-            <input 
-              type="text" 
-              id="error-input"
-              className="input"
-              aria-invalid="true"
-              placeholder="Campo com erro"
-            />
-          </div>
-          
-          <div className="field-group">
-            <label htmlFor="disabled-input">Campo Desabilitado</label>
-            <input 
-              type="text" 
-              id="disabled-input"
-              className="input"
-              disabled
-              placeholder="Campo desabilitado"
-            />
-          </div>
+
+          <h3>Estados de Erro</h3>
+          <label htmlFor="error-input">Campo com Erro</label>
+          <input 
+            type="text" 
+            id="error-input"
+            className="input"
+            aria-invalid="true"
+            defaultValue="Valor inválido"
+          />
         </div>
       </section>
 
-      {/* Seção 5: Componentes de UI Comuns */}
+      {/* Seção 5: Componentes UI */}
       <section className="section">
         <h2>Componentes de UI</h2>
-        
+
         <h3>Cards</h3>
         <div className="card-grid">
           <div className="card">
-            <h4>Card Exemplo</h4>
-            <p>Este é um exemplo de card com conteúdo básico.</p>
+            <h4>Card de Exemplo 1</h4>
+            <p>Este é um exemplo de card que pode conter várias informações organizadas de forma clara e acessível.</p>
           </div>
           <div className="card">
-            <h4>Outro Card</h4>
-            <p>Cards são úteis para organizar conteúdo relacionado.</p>
+            <h4>Card de Exemplo 2</h4>
+            <p>Outro exemplo de card demonstrando como eles se comportam em um layout de grid responsivo.</p>
+          </div>
+          <div className="card">
+            <h4>Card de Exemplo 3</h4>
+            <p>Um terceiro card para mostrar como múltiplos elementos se organizam no espaço disponível.</p>
           </div>
         </div>
-        
-        <h3>Avatars</h3>
+
+        <h3>Avatares</h3>
         <div className="avatar-group">
           <div className="avatar avatar-small">JS</div>
           <div className="avatar avatar-medium">MD</div>
           <div className="avatar avatar-large">LG</div>
         </div>
-        
-        <h3>Badges</h3>
-        <div className="badge-group">
-          <span className="badge badge-primary">Primário</span>
-          <span className="badge badge-success">Sucesso</span>
-          <span className="badge badge-error">Erro</span>
-          <span className="badge badge-warning">Aviso</span>
-        </div>
-        
-        <h3>Alertas</h3>
-        <div className="alert-group">
-          <div className="alert alert-success">
-            <strong>Sucesso!</strong> Operação realizada com êxito.
-          </div>
-          <div className="alert alert-error">
-            <strong>Erro!</strong> Algo deu errado. Tente novamente.
-          </div>
-          <div className="alert alert-warning">
-            <strong>Atenção!</strong> Esta ação não pode ser desfeita.
-          </div>
-          <div className="alert alert-info">
-            <strong>Informação:</strong> Aqui está uma informação útil.
-          </div>
-        </div>
-        
-        <h3>Tabela</h3>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>Status</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>João Silva</td>
-              <td>joao@exemplo.com</td>
-              <td><span className="badge badge-success">Ativo</span></td>
-              <td><button className="button-ghost">Editar</button></td>
-            </tr>
-            <tr>
-              <td>Maria Santos</td>
-              <td>maria@exemplo.com</td>
-              <td><span className="badge badge-warning">Pendente</span></td>
-              <td><button className="button-ghost">Editar</button></td>
-            </tr>
-            <tr>
-              <td>Pedro Costa</td>
-              <td>pedro@exemplo.com</td>
-              <td><span className="badge badge-error">Inativo</span></td>
-              <td><button className="button-ghost">Editar</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      {/* Seção 6: Navegação */}
-      <section className="section">
-        <h2>Navegação</h2>
-        
-        <nav className="navbar">
-          <ul>
-            <li><a href="#" className="nav-link active">Home</a></li>
-            <li><a href="#" className="nav-link">Produtos</a></li>
-            <li><a href="#" className="nav-link">Sobre</a></li>
-            <li><a href="#" className="nav-link">Contato</a></li>
-          </ul>
-        </nav>
       </section>
     </div>
   )
