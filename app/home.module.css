@@ -102,7 +102,7 @@
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-flex;
-  align-items: center;
+  align-items: right;
   gap: var(--spacing-sm);
 }
 
