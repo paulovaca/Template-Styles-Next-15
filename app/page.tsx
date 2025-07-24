@@ -216,8 +216,221 @@ export default function StyleGuide() {
         <div className="avatar-group">
           <div className="avatar avatar-small">JS</div>
           <div className="avatar avatar-medium">MD</div>
-          <div className="avatar avatar-large">LG</div>
+          <div className="avatar avatar-large">AB</div>
         </div>
+
+        <h3>Badges</h3>
+        <div className="badge-group">
+          <span className="badge badge-primary">Primário</span>
+          <span className="badge badge-secondary">Secundário</span>
+          <span className="badge badge-success">Sucesso</span>
+          <span className="badge badge-warning">Atenção</span>
+          <span className="badge badge-error">Erro</span>
+        </div>
+
+        <h3>Pills/Tags</h3>
+        <div className="pill-group">
+          <span className="pill">React</span>
+          <span className="pill">TypeScript</span>
+          <span className="pill">Next.js</span>
+          <span className="pill">CSS</span>
+        </div>
+
+        <h3>Progress Bar</h3>
+        <div className="progress-examples">
+          <div className="progress-item">
+            <label>Progresso 25%</label>
+            <div className="progress">
+              <div className="progress-bar" style={{width: '25%'}}></div>
+            </div>
+          </div>
+          <div className="progress-item">
+            <label>Progresso 60%</label>
+            <div className="progress">
+              <div className="progress-bar" style={{width: '60%'}}></div>
+            </div>
+          </div>
+          <div className="progress-item">
+            <label>Progresso 90%</label>
+            <div className="progress">
+              <div className="progress-bar" style={{width: '90%'}}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção 6: Notificações e Estados */}
+      <section className="section">
+        <h2>Notificações e Estados</h2>
+
+        <h3>Alerts</h3>
+        <div className="alert alert-success">
+          <strong>Sucesso!</strong> Operação realizada com sucesso.
+        </div>
+        <div className="alert alert-warning">
+          <strong>Atenção!</strong> Verifique as informações antes de continuar.
+        </div>
+        <div className="alert alert-error">
+          <strong>Erro!</strong> Algo deu errado. Tente novamente.
+        </div>
+        <div className="alert alert-info">
+          <strong>Informação:</strong> Esta é uma mensagem informativa.
+        </div>
+
+        <h3>Loading States</h3>
+        <div className="loading-examples">
+          <div className="spinner"></div>
+          <div className="skeleton-box"></div>
+          <div className="skeleton-text"></div>
+          <div className="skeleton-text skeleton-text-short"></div>
+        </div>
+
+        <h3>Empty States</h3>
+        <div className="empty-state">
+          <div className="empty-state-icon">📂</div>
+          <h4>Nenhum item encontrado</h4>
+          <p>Comece adicionando um novo item ao seu projeto.</p>
+          <button className="button-primary">Adicionar Item</button>
+        </div>
+      </section>
+
+      {/* Seção 7: Navegação e Layout */}
+      <section className="section">
+        <h2>Navegação e Layout</h2>
+
+        <h3>Breadcrumbs</h3>
+        <nav className="breadcrumb">
+          <a href="#">Home</a>
+          <span className="breadcrumb-separator">/</span>
+          <a href="#">Projetos</a>
+          <span className="breadcrumb-separator">/</span>
+          <span className="breadcrumb-current">Guia de Estilos</span>
+        </nav>
+
+        <h3>Tabs</h3>
+        <div className="tabs">
+          <button className="tab tab-active">Visão Geral</button>
+          <button className="tab">Configurações</button>
+          <button className="tab">Relatórios</button>
+          <button className="tab">Histórico</button>
+        </div>
+
+        <h3>Dividers</h3>
+        <p>Texto antes do divisor</p>
+        <hr className="divider" />
+        <p>Texto depois do divisor</p>
+        <div className="divider-with-text">
+          <span>OU</span>
+        </div>
+        <p>Texto após divisor com texto</p>
+      </section>
+
+      {/* Seção 8: Interação e Feedback */}
+      <section className="section">
+        <h2>Interação e Feedback</h2>
+
+        <h3>Tooltips</h3>
+        <div className="tooltip-examples">
+          <button className="button-secondary tooltip-trigger" title="Esta é uma dica de ferramenta">
+            Hover para tooltip
+          </button>
+        </div>
+
+        <h3>Modal/Overlay</h3>
+        <div className="modal-example">
+          <div className="modal-backdrop">
+            <div className="modal">
+              <div className="modal-header">
+                <h3>Título do Modal</h3>
+                <button className="modal-close">×</button>
+              </div>
+              <div className="modal-body">
+                <p>Conteúdo do modal vai aqui. Este é um exemplo de como um modal deve aparecer.</p>
+              </div>
+              <div className="modal-footer">
+                <button className="button-secondary">Cancelar</button>
+                <button className="button-primary">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Accordion</h3>
+        <div className="accordion">
+          <details className="accordion-item">
+            <summary className="accordion-header">Seção 1</summary>
+            <div className="accordion-content">
+              <p>Conteúdo da primeira seção do accordion.</p>
+            </div>
+          </details>
+          <details className="accordion-item">
+            <summary className="accordion-header">Seção 2</summary>
+            <div className="accordion-content">
+              <p>Conteúdo da segunda seção do accordion.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      {/* Seção 9: Dados e Tabelas */}
+      <section className="section">
+        <h2>Dados e Tabelas</h2>
+
+        <h3>Table</h3>
+        <div className="table-container">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>João Silva</td>
+                <td>joao@email.com</td>
+                <td><span className="badge badge-success">Ativo</span></td>
+                <td>
+                  <button className="button-ghost">Editar</button>
+                  <button className="button-destructive">Excluir</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Maria Santos</td>
+                <td>maria@email.com</td>
+                <td><span className="badge badge-warning">Pendente</span></td>
+                <td>
+                  <button className="button-ghost">Editar</button>
+                  <button className="button-destructive">Excluir</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>List Items</h3>
+        <ul className="list">
+          <li className="list-item">
+            <div className="list-item-content">
+              <h4>Item de Lista 1</h4>
+              <p>Descrição do primeiro item</p>
+            </div>
+            <div className="list-item-actions">
+              <button className="button-ghost">Editar</button>
+            </div>
+          </li>
+          <li className="list-item">
+            <div className="list-item-content">
+              <h4>Item de Lista 2</h4>
+              <p>Descrição do segundo item</p>
+            </div>
+            <div className="list-item-actions">
+              <button className="button-ghost">Editar</button>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
   )
