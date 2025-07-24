@@ -140,7 +140,7 @@
 .themeControls {
   position: absolute;
   top: var(--spacing-xl);
-  right: var(--spacing-3xl);
+  right: var(--spacing-xs);
   z-index: 10;
 }
 
