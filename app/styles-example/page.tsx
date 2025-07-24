@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function StyleGuide() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
@@ -13,13 +14,18 @@ export default function StyleGuide() {
     <div className="container" data-theme={theme}>
       {/* Header com controle de tema */}
       <header className="header">
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '1rem'}}>
+          <Link href="/" className="button-secondary" style={{textDecoration: 'none'}}>
+            ← Voltar para Home
+          </Link>
+          <button 
+            onClick={toggleTheme}
+            className="button-primary theme-toggle"
+          >
+            {theme === 'light' ? '🌙 Tema Escuro' : '☀️ Tema Claro'}
+          </button>
+        </div>
         <h1>Guia de Estilos</h1>
-        <button 
-          onClick={toggleTheme}
-          className="button-primary theme-toggle"
-        >
-          {theme === 'light' ? '🌙 Tema Escuro' : '☀️ Tema Claro'}
-        </button>
       </header>
 
       {/* Seção 1: Paleta de Cores */}
