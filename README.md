@@ -1,4 +1,5 @@
 
+
 # Next.js 15 Template Moderno
 
 Um template completo e moderno para inicializar projetos Next.js com sistema de temas, componentes reutilizáveis e uma arquitetura escalável.
@@ -156,6 +157,23 @@ Acesse `/styles-example` para ver todos os componentes e estilos disponíveis em
 - Efeitos visuais avançados
 - Estados e interações
 
+## Getting Started
+
+Hit the run button to start the development server.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+[Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) allow you to create custom request handlers for a given route using the Web Request and Response APIs.
+
+The `app/api` directory is mapped to `/api/*`. Folders in this directory with files named `route.ts` are treated as [Route handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) instead of pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
 ## 🎯 Melhores Práticas
 
 1. **Sempre use variáveis CSS** em vez de valores hardcoded
@@ -172,6 +190,12 @@ Para fazer deploy do seu projeto:
 2. Escolha **Static Deployment** ou **Autoscale Deployment**
 3. Configure as opções conforme necessário
 4. Clique em **Deploy**
+
+## Productionizing your Next App
+
+To make your next App run smoothly in production make sure to deploy your project with [Repl Deployments](https://docs.replit.com/hosting/deployments/about-deployments)!
+
+You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
 
 ## 📝 Customização Rápida
 
@@ -198,3 +222,4 @@ Este projeto é disponibilizado sob licença MIT. Você pode usar, modificar e d
 ---
 
 **Template criado por Paulo Minari** - Utilize livremente em seus projetos Next.js
+
