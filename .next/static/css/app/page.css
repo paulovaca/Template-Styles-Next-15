@@ -1,0 +1,177 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/home.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+
+.home_container__eduTK {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home_header__5FqNo {
+  margin-bottom: 3rem;
+}
+
+.home_title__6bp0U {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home_subtitle__CfG7j {
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.home_author__fpozi {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
+.home_description__ASwvQ {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+}
+
+.home_features__ik5w8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.home_featureCard__mhPve {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  transition: all 0.3s ease;
+}
+
+.home_featureCard__mhPve:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--color-shadow-hover);
+}
+
+.home_featureIcon__42_vj {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home_featureTitle__nkj9Q {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.home_featureDescription__2opC1 {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.home_actions__r95_w {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.home_button__NcRVS {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home_buttonPrimary__SvWw3 {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 112, 243, 0.3);
+}
+
+.home_buttonPrimary__SvWw3:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 112, 243, 0.4);
+}
+
+.home_buttonSecondary__3x9xF {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-border);
+}
+
+.home_buttonSecondary__3x9xF:hover {
+  background-color: var(--color-surface-hover);
+  border-color: var(--color-primary);
+}
+
+.home_footer__HqMXW {
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border-light);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.home_themeControls__pjKm3 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home_container__eduTK {
+    padding: 1rem;
+  }
+
+  .home_title__6bp0U {
+    font-size: 2.5rem;
+  }
+
+  .home_subtitle__CfG7j {
+    font-size: 1.25rem;
+  }
+
+  .home_features__ik5w8 {
+    grid-template-columns: 1fr;
+  }
+
+  .home_actions__r95_w {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home_themeControls__pjKm3 {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
