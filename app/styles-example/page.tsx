@@ -14,10 +14,11 @@ export default function StyleGuide() {
     <div className="container" data-theme={theme}>
       {/* Header com controle de tema */}
       <header className="header">
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', marginBottom: '1rem'}}>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
           <Link href="/" className="button-secondary" style={{textDecoration: 'none'}}>
             ← Voltar para Home
           </Link>
+          <h1 style={{margin: 0, flex: 1, textAlign: 'center'}}>Guia de Estilos</h1>
           <button 
             onClick={toggleTheme}
             className="button-primary theme-toggle"
@@ -25,7 +26,6 @@ export default function StyleGuide() {
             {theme === 'light' ? '🌙 Tema Escuro' : '☀️ Tema Claro'}
           </button>
         </div>
-        <h1>Guia de Estilos</h1>
       </header>
 
       {/* Seção 1: Paleta de Cores */}
