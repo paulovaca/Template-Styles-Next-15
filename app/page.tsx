@@ -432,6 +432,187 @@ export default function StyleGuide() {
           </li>
         </ul>
       </section>
+
+      {/* Seção 10: Gradientes e Degradês */}
+      <section className="section">
+        <h2>Gradientes e Degradês</h2>
+
+        <h3>Gradientes Lineares</h3>
+        <div className="gradient-examples">
+          <div className="gradient-box gradient-primary">
+            <span>Gradiente Primário</span>
+          </div>
+          <div className="gradient-box gradient-secondary">
+            <span>Gradiente Secundário</span>
+          </div>
+          <div className="gradient-box gradient-sunset">
+            <span>Pôr do Sol</span>
+          </div>
+          <div className="gradient-box gradient-ocean">
+            <span>Oceano</span>
+          </div>
+        </div>
+
+        <h3>Gradientes Radiais</h3>
+        <div className="gradient-examples">
+          <div className="gradient-box gradient-radial-primary">
+            <span>Radial Primário</span>
+          </div>
+          <div className="gradient-box gradient-radial-rainbow">
+            <span>Arco-íris</span>
+          </div>
+        </div>
+
+        <h3>Botões com Gradiente</h3>
+        <div style={{marginBottom: '2rem'}}>
+          <button className="button-gradient-primary">Botão Gradiente</button>
+          <button className="button-gradient-success">Sucesso Gradiente</button>
+          <button className="button-gradient-warning">Aviso Gradiente</button>
+        </div>
+
+        <h3>Cards com Gradiente</h3>
+        <div className="card-grid">
+          <div className="card gradient-card-1">
+            <h4>Card Gradiente 1</h4>
+            <p>Card com fundo gradiente sutil e elegante.</p>
+          </div>
+          <div className="card gradient-card-2">
+            <h4>Card Gradiente 2</h4>
+            <p>Outro exemplo de card com gradiente diferente.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção 11: Animações e Transições */}
+      <section className="section">
+        <h2>Animações e Transições</h2>
+
+        <h3>Animações de Hover</h3>
+        <div className="animation-examples">
+          <div className="animation-box hover-scale">
+            <span>Hover Scale</span>
+          </div>
+          <div className="animation-box hover-rotate">
+            <span>Hover Rotate</span>
+          </div>
+          <div className="animation-box hover-bounce">
+            <span>Hover Bounce</span>
+          </div>
+          <div className="animation-box hover-slide">
+            <span>Hover Slide</span>
+          </div>
+        </div>
+
+        <h3>Animações Contínuas</h3>
+        <div className="animation-examples">
+          <div className="animation-box pulse-animation">
+            <span>Pulse</span>
+          </div>
+          <div className="animation-box float-animation">
+            <span>Float</span>
+          </div>
+          <div className="animation-box rotate-animation">
+            <span>Rotate</span>
+          </div>
+          <div className="animation-box glow-animation">
+            <span>Glow</span>
+          </div>
+        </div>
+
+        <h3>Elementos com Animação de Entrada</h3>
+        <div className="entry-animations">
+          <div className="entry-box fade-in">
+            <h4>Fade In</h4>
+            <p>Aparece gradualmente</p>
+          </div>
+          <div className="entry-box slide-in-left">
+            <h4>Slide In Left</h4>
+            <p>Desliza da esquerda</p>
+          </div>
+          <div className="entry-box slide-in-up">
+            <h4>Slide In Up</h4>
+            <p>Desliza de baixo</p>
+          </div>
+          <div className="entry-box zoom-in">
+            <h4>Zoom In</h4>
+            <p>Aparece com zoom</p>
+          </div>
+        </div>
+
+        <h3>Botões Animados</h3>
+        <div style={{marginBottom: '2rem'}}>
+          <button className="button-animated-1">Botão Animado 1</button>
+          <button className="button-animated-2">Botão Animado 2</button>
+          <button className="button-animated-3">Botão Ripple</button>
+        </div>
+
+        <h3>Loading com Animação</h3>
+        <div className="animated-loading">
+          <div className="spinner-dots">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className="spinner-bars">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className="spinner-wave">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção 12: Efeitos Visuais Avançados */}
+      <section className="section">
+        <h2>Efeitos Visuais Avançados</h2>
+
+        <h3>Glassmorphism</h3>
+        <div className="glass-container">
+          <div className="glass-card">
+            <h4>Efeito Glass</h4>
+            <p>Card com efeito de vidro translúcido</p>
+            <button className="button-glass">Botão Glass</button>
+          </div>
+        </div>
+
+        <h3>Neumorphism</h3>
+        <div className="neuro-container">
+          <div className="neuro-card">
+            <h4>Neumorphism</h4>
+            <p>Design com sombras suaves</p>
+          </div>
+          <button className="neuro-button">Botão Neuro</button>
+        </div>
+
+        <h3>Bordas Animadas</h3>
+        <div className="border-animations">
+          <div className="border-box border-gradient">
+            <span>Borda Gradiente</span>
+          </div>
+          <div className="border-box border-moving">
+            <span>Borda Movendo</span>
+          </div>
+          <div className="border-box border-neon">
+            <span>Borda Neon</span>
+          </div>
+        </div>
+
+        <h3>Shadows Avançadas</h3>
+        <div className="shadow-examples">
+          <div className="shadow-box shadow-soft">Sombra Suave</div>
+          <div className="shadow-box shadow-colored">Sombra Colorida</div>
+          <div className="shadow-box shadow-multiple">Sombras Múltiplas</div>
+          <div className="shadow-box shadow-inset">Sombra Interna</div>
+        </div>
+      </section>
     </div>
   )
 }
